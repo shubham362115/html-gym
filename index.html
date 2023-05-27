@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My gym </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("anastase-maragos-7kEpUPB8vNk-unsplash.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            margin: 0%;
+            padding: 0%;
+        }
+        .left{
+            /* border: 2px solid red; */
+            color:white;
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 20px
+
+        }
+        .left img{
+            filter: invert(100%);
+            width: 90px;
+        }
+        .left div{
+            text-align: center;
+            line-height: 0%;
+            font-family: 'Source Code Pro', monospace;
+
+        }
+        .mid{
+            border: 2px solid yellow;
+            color: chartreuse;
+            display: block;
+            width: 42%;
+            margin: 20px auto;
+            border-radius: 50px;
+
+        }.right{
+            /* border: 2px solid black; */
+            color: blue;
+            display: inline-block;
+            position: absolute;
+            right: 22px;
+            top: 20px
+
+        }
+        ul>li{
+            display: inline-block;
+        }
+        li a {
+            color: white;
+            text-decoration: none;
+            padding: 0 28px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 18px;
+        }
+        .nav li a:hover{
+            text-decoration: underline;
+            color: brown;
+        }
+        .nav li .active{
+            text-decoration: underline;
+            color: brown;
+        }
+        .btn{
+            margin: 5px 5px;
+            background-color: white;
+            border-radius: 25px;
+            padding: 5px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Monomaniac One', sans-serif;
+            
+        }
+        .btn:hover{
+            background-color: rgb(201, 232, 24);
+        }
+        .cont{
+            width: 33%;
+            border: 3px solid rgb(232, 232, 36);
+            margin: 100px 40px;
+            padding: 13px 22px;
+            border-radius: 12px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: auto;
+            margin: 16px auto;
+            padding: 7px 60px;
+            border: 3px solid rgb(57, 57, 9) ;
+            border-radius: 20px;
+            font-family: 'Source Code Pro', monospace;
+
+        }
+        form>h1{
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            color: white;
+        }
+        form>h1:hover{
+            color: brown;
+            
+        }
+        form>.btn{
+            display: block;
+            width: 33%;
+            margin: 16px auto;
+            font-size: large;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Roboto+Mono:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&family=Exo+2:wght@300&family=Monomaniac+One&family=Red+Hat+Display:wght@500&family=Roboto+Mono:ital,wght@0,400;1,200&family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="left">
+        <img src="weight-g740d17917_1280.png">
+        <div>Fitness</div>
+    </div>
+    <div class="mid">
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a> </li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+    </div>
+    <div class="cont">
+        <form action="noaction.php">
+            <h1>Fitness gym</h1>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your weight">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
